@@ -37,7 +37,7 @@ jobs:
         uses: mirko-felice/list-files@v1.0.1
         with:
           path: "."
-          type: ".yml"
+          ext: ".yml"
   test:
     needs: list-files
     strategy:

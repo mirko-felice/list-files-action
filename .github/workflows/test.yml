@@ -22,7 +22,7 @@ jobs:
         uses: mirko-felice/list-files-action@v1.0.1
         with:
           path: "."
-          type: ".yml"
+          ext: ".yml"
   Test:
     needs: list-files
     strategy:
