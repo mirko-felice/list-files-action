@@ -58,7 +58,7 @@ github/workflows/test.yml
 action.yml
 ```
 
-
 ## License
+[MIT license]
 
 [MIT license]: LICENSE
