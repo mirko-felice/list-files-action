@@ -1,6 +1,11 @@
 name: Test
 
 on:
+  push:
+    tags:
+      - '*'
+    branches:
+      - 'master'
   pull_request:
   workflow_dispatch:
 
@@ -14,7 +19,7 @@ jobs:
         uses: actions/checkout@v2.4.0
       - name: List Files
         id: list-files
-        uses: mirko-felice/testAction@master
+        uses: mirko-felice/list-files-action@v1.0.1
         with:
           path: "."
           type: ".yml"
