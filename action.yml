@@ -1,0 +1,30 @@
+name: 'List Files Action'
+description: 'List all matching files in specific path.'
+author: "Mirko Felice"
+
+inputs:
+  path:
+    description: "Path where searching files"
+    required: true
+  ext:
+    description: "File extension to match"
+    required: true
+outputs:
+  paths:
+    value: ${{ steps.py.outputs.paths }}
+    description: "List of all matching files"
+
+runs:
+  using: composite
+  steps:
+    - name: Setup Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.7'
+    - shell: bash
+      id: py
+      name: Execute Python
+      env:
+        INPUT_PATH: ${{ inputs.path }}
+        INPUT_EXT: ${{ inputs.ext }}
+      run: python main.py
