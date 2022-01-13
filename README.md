@@ -34,7 +34,7 @@ jobs:
         uses: actions/checkout@v2.4.0
       - name: List Files
         id: list-files
-        uses: mirko-felice/list-files@v1.0.2
+        uses: mirko-felice/list-files-action@v2.0.0
         with:
           path: "."
           ext: ".yml"
