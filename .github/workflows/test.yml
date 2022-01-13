@@ -45,6 +45,10 @@ jobs:
       - name: Publish Release
         env:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+          GIT_AUTHOR_NAME: Mirko Felice
+          GIT_AUTHOR_EMAIL: mirko.felice@studio.unibo.it
+          GIT_COMMITTER_NAME: Mirko Felice
+          GIT_COMMITTER_EMAIL: mirko.felice@studio.unibo.it
         run: |
           npm install
           npx semantic-release
