@@ -27,7 +27,7 @@ runs:
       env:
         INPUT_PATH: ${{ inputs.path }}
         INPUT_EXT: ${{ inputs.ext }}
-      run: python main.py
+      run: python ${{ github.action_path }}/main.py
 
 branding:
   icon: file
