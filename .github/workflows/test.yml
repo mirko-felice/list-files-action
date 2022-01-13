@@ -35,20 +35,3 @@ jobs:
       - name: Output results
         run: |
           echo ${{ matrix.paths }}
-  Release:
-    if: github.ref_name == 'master'
-    needs: Test
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout the repository
-        uses: actions/checkout@v2.4.0
-      - name: Publish Release
-        env:
-          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
-          GIT_AUTHOR_NAME: Mirko Felice
-          GIT_AUTHOR_EMAIL: mirko.felice@studio.unibo.it
-          GIT_COMMITTER_NAME: Mirko Felice
-          GIT_COMMITTER_EMAIL: mirko.felice@studio.unibo.it
-        run: |
-          npm install
-          npx semantic-release
