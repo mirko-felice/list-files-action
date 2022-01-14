@@ -4,10 +4,12 @@ GitHub action to list path of all files of a particular extension in the folder/
 specified by the user.
 
 ## Inputs
-| Input             | Description                |
-|-------------------|----------------------------|
-| `path` (required) | Path where searching files |
-| `ext`  (required) | File extension to match    |
+| Input                                    | Description                           |
+|------------------------------------------|---------------------------------------|
+| `repo` (required)                        | Repository name where to search files |
+| `ref`  (optional => default is 'master') | Branch or tag to checkout             |
+| `path` (required)                        | Path where searching files            |
+| `ext`  (required)                        | File extension to match               |
 
 ## Outputs
 
@@ -18,9 +20,14 @@ specified by the user.
 ## Usage example
 
 ```yaml
-name: List Files Example
+name: Test
 
 on:
+  push:
+    tags-ignore:
+      - '*'
+    branches:
+      - 'master'
   pull_request:
   workflow_dispatch:
 
@@ -30,23 +37,21 @@ jobs:
     outputs:
       paths: ${{ steps.list-files.outputs.paths }}
     steps:
-      - name: Checkout Repository
-        uses: actions/checkout@v2.4.0
       - name: List Files
         id: list-files
-        uses: mirko-felice/list-files-action@v2.0.0
+        uses: mirko-felice/list-files-action@v3.0.0
         with:
+          repo: ${{ github.repository }}
+          ref: ${{ github.ref_name }}
           path: "."
           ext: ".yml"
-  test:
+  Test:
     needs: list-files
     strategy:
       matrix:
         paths: ${{ fromJson(needs.list-files.outputs.paths) }}
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout Repository
-        uses: actions/checkout@v2.4.0
       - name: Output results
         run: |
           echo ${{ matrix.paths }}

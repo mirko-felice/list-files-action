@@ -1,0 +1,12 @@
+{
+  "tagFormat": "v${version}",
+  "plugins": [
+    "@semantic-release/commit-analyzer",
+    "@semantic-release/release-notes-generator",
+    "@semantic-release/changelog",
+    [ "@semantic-release/git", {
+      "message": "chore(release): v${nextRelease.version}"
+    }],
+    "@semantic-release/github"
+  ]
+}

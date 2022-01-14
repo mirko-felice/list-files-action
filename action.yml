@@ -3,6 +3,13 @@ description: 'List all matching files in specific path.'
 author: "Mirko Felice"
 
 inputs:
+  repo:
+    description: "Repository name where to search files"
+    required: true
+  ref:
+    description: "Branch or tag to checkout"
+    default: "master"
+    required: false
   path:
     description: "Path where searching files"
     required: true
@@ -17,6 +24,11 @@ outputs:
 runs:
   using: composite
   steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v2.4.0
+      with:
+        repository: ${{ inputs.repo }}
+        ref: ${{ inputs.ref }}
     - name: Setup Python
       uses: actions/setup-python@v2
       with:
