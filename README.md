@@ -39,10 +39,10 @@ jobs:
     steps:
       - name: List Files
         id: list-files
-        uses: mirko-felice/list-files-action@v3.0.0
+        uses: mirko-felice/list-files-action@v3.0.1
         with:
           repo: ${{ github.repository }}
-          ref: ${{ github.ref_name }}
+          ref: ${{ github.ref }}
           path: "."
           ext: ".yml"
   Test:

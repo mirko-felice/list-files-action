@@ -22,7 +22,7 @@ jobs:
         uses: mirko-felice/list-files-action@master
         with:
           repo: ${{ github.repository }}
-          ref: ${{ github.ref_name }}
+          ref: ${{ github.ref }}
           path: "."
           ext: ".yml"
   Test:
