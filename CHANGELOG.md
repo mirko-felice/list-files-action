@@ -1,3 +1,10 @@
+## [3.0.1](https://github.com/mirko-felice/list-files-action/compare/v3.0.0...v3.0.1) (2022-02-09)
+
+
+### Bug Fixes
+
+* fix branch ref issue on pull request + update README ([6b79a0a](https://github.com/mirko-felice/list-files-action/commit/6b79a0a98e47ae199825b81bd1f1bff6e1681b22))
+
 # [3.0.0](https://github.com/mirko-felice/list-files-action/compare/v2.0.0...v3.0.0) (2022-01-14)
 
 
