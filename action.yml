@@ -30,7 +30,7 @@ runs:
         repository: ${{ inputs.repo }}
         ref: ${{ inputs.ref }}
     - name: Setup Python
-      uses: actions/setup-python@v2
+      uses: actions/setup-python@v3
       with:
         python-version: '3.7'
     - shell: bash
