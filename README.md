@@ -1,5 +1,7 @@
 # List Files Action
 
+[![Quality gate](https://sonarcloud.io/api/project_badges/quality_gate?project=mirko-felice_list-files-action)](https://sonarcloud.io/summary/new_code?id=mirko-felice_list-files-action)
+
 GitHub action to list path of all files of a particular extension in the folder/directory
 specified by the user.
 

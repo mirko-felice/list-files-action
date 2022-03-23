@@ -6,7 +6,7 @@ def remove_last_occurrence(string: str, char: str):
     length = len(string)
     string2 = ''
     for i in range(length):
-        if(string[i] == char):
+        if string[i] == char:
             string2 = string[0:i] + string[i + 1:length]
     return string2
 
