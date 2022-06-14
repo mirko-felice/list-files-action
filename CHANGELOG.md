@@ -1,3 +1,10 @@
+## [3.0.2](https://github.com/mirko-felice/list-files-action/compare/v3.0.1...v3.0.2) (2022-06-14)
+
+
+### Bug Fixes
+
+* solve npm vulnerabilities ([5ae487b](https://github.com/mirko-felice/list-files-action/commit/5ae487b5a7833a7ff1499c8f13c9e690c92105e5))
+
 ## [3.0.1](https://github.com/mirko-felice/list-files-action/compare/v3.0.0...v3.0.1) (2022-02-09)
 
 
