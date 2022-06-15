@@ -1,3 +1,10 @@
+## [3.0.3](https://github.com/mirko-felice/list-files-action/compare/v3.0.2...v3.0.3) (2022-06-15)
+
+
+### Bug Fixes
+
+* **deps:** pin dependency semantic-release to 19.0.3 ([fd4a9a6](https://github.com/mirko-felice/list-files-action/commit/fd4a9a69a66e4c209676964cda94bba956b7ad96))
+
 ## [3.0.2](https://github.com/mirko-felice/list-files-action/compare/v3.0.1...v3.0.2) (2022-06-14)
 
 
