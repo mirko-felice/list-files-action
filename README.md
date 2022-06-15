@@ -1,7 +1,13 @@
 # List Files Action
 
-[![Quality gate](https://sonarcloud.io/api/project_badges/quality_gate?project=mirko-felice_list-files-action)](https://sonarcloud.io/summary/new_code?id=mirko-felice_list-files-action)
+<p align="center">
 
+[![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/mirko-felice/list-files-action?label=latest-release)](https://github.com/mirko-felice/DroneSecurity/releases/latest)
+
+[![Test](https://github.com/mirko-felice/list-files-action/actions/workflows/test.yml/badge.svg)](https://github.com/mirko-felice/list-files-action/actions/workflows/test.yml)
+
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=mirko-felice_list-files-action&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=mirko-felice_list-files-action)
+</p>
 GitHub action to list path of all files of a particular extension in the folder/directory
 specified by the user.
 
