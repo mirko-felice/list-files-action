@@ -10,6 +10,6 @@
     "node": "16.15"
   },
   "dependencies": {
-    "semantic-release": "^19.0.3"
+    "semantic-release": "19.0.3"
   }
 }
