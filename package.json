@@ -10,6 +10,6 @@
     "node": "18.14"
   },
   "dependencies": {
-    "semantic-release": "19.0.5"
+    "semantic-release": "20.1.1"
   }
 }
