@@ -1,6 +1,6 @@
 {
   "devDependencies": {
-    "@semantic-release/changelog": "6.0.2",
+    "@semantic-release/changelog": "6.0.3",
     "@semantic-release/commit-analyzer": "9.0.2",
     "@semantic-release/git": "10.0.1",
     "@semantic-release/github": "8.0.7",
@@ -10,6 +10,6 @@
     "node": "18.15"
   },
   "dependencies": {
-    "semantic-release": "20.1.1"
+    "semantic-release": "20.1.3"
   }
 }
