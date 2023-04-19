@@ -1,3 +1,10 @@
+## [3.0.4](https://github.com/mirko-felice/list-files-action/compare/v3.0.3...v3.0.4) (2023-04-19)
+
+
+### Bug Fixes
+
+* **deps:** update npm to solve security issue ([b13b787](https://github.com/mirko-felice/list-files-action/commit/b13b787e0aa053bb84a5b909ce60c08dac44d582))
+
 ## [3.0.3](https://github.com/mirko-felice/list-files-action/compare/v3.0.2...v3.0.3) (2022-06-15)
 
 
