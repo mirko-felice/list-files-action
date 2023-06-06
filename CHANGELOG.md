@@ -1,3 +1,10 @@
+## [3.0.5](https://github.com/mirko-felice/list-files-action/compare/v3.0.4...v3.0.5) (2023-06-06)
+
+
+### Bug Fixes
+
+* patch deprecated 'set-output' method ([bddca29](https://github.com/mirko-felice/list-files-action/commit/bddca29614d63674e3ffab4edc2200123763f44d))
+
 ## [3.0.4](https://github.com/mirko-felice/list-files-action/compare/v3.0.3...v3.0.4) (2023-04-19)
 
 
