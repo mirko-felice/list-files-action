@@ -2,7 +2,7 @@
 
 <p align="center">
 
-[![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/mirko-felice/list-files-action?label=latest-release)](https://github.com/mirko-felice/DroneSecurity/releases/latest)
+[![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/mirko-felice/list-files-action?label=latest-release)](https://github.com/mirko-felice/list-files-action/releases/latest)
 
 [![Test](https://github.com/mirko-felice/list-files-action/actions/workflows/test.yml/badge.svg)](https://github.com/mirko-felice/list-files-action/actions/workflows/test.yml)
 
@@ -47,7 +47,7 @@ jobs:
     steps:
       - name: List Files
         id: list-files
-        uses: mirko-felice/list-files-action@v3.0.1
+        uses: mirko-felice/list-files-action@v3.0.5
         with:
           repo: ${{ github.repository }}
           ref: ${{ github.ref }}
