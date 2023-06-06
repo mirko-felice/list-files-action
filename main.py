@@ -23,7 +23,8 @@ def main():
 
     paths = remove_last_occurrence(paths, ',')
     paths = "[" + paths + "]"
-    sys.stdout.write(f'::set-output name=paths::{paths}\n')
+    with open(os.environ["GITHUB_OUTPUT"], "a") as f:
+        print(f'paths={paths}\n', file=f)
     print(paths)
 
     sys.exit(0)
