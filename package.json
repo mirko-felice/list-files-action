@@ -1,6 +1,6 @@
 {
   "engines": {
-    "node": "18.17"
+    "node": "18.20"
   },
   "dependencies": {
     "npm": "9.8.1",
